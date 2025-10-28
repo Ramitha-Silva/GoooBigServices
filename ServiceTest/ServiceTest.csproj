@@ -1,0 +1,1815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48710214-1768-4E9C-86CC-5005A6333519}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceTest</RootNamespace>
+    <AssemblyName>ServiceTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.1.18\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.1.18\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aaa.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsAddress.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsAddressesType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsAllowanceType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsArchiveFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsBank.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsBloodType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCarsBrand.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCarsModel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCarsStyle.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCity.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsColor.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCompaniesActivity.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCompany.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCountry.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCummunicationsAccountsType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCurrenciesCategory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsCurrency.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsDepartment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsDepartmentsStructure.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsDirection.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsDirectionDepartment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsDirectionsLevel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsDirectionsType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsEconomicStatu.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsEducationDegree.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsGate.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsHospital.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsHotel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsInvestigationsBip.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsInvestigationsBipsDirection.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsIssuesFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsLanguage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsLevel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsLevelName.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsMailType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsMinistry.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsMonth.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsPersonsRelation.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsPhonesType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsPlace.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsPort.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsPortsType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsPosition.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsReligion.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsResidencesType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsSIDType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsSocialStatu.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsSubPermission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsTelecomsProvider.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsVehiclesStatu.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsVehiclesType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeaponsBrand.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeaponsCountry.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeaponsGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeaponsModel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeaponsStatu.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeaponsType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeaponsVolume.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClsWeek.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoDegreeOfDisability.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoEducationalStatu.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoReason.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoResearcherReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSocialResearcher.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSocialStatu.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSubParentFamily.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSubParentsProfile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSubParentUser.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSubSupportProgram.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSubUserProfile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSupportProgram.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSupportProgramsReason.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoSupportRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CountOccupied_VacanciesView.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoUserParentsProfile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoUserProfile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoUserProfileImage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoUserProfileReason.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DEPARTMENT2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePosAuth.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exemption.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeChangePassword.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeRating.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeTempCart.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeUser.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeUsersAddress.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeUsersOrder.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeUsersRating.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeUsersStatictic.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeUsersSubscription.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwAttendancesDay.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwAttendancesEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwAttendancesFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwDepartmentsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwEmployeesActivation.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwExecuseType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwGetMandates_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwGetWorkingDays_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwOfficersAttendances_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwOutsourceAttendance.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwOutSourceEmpsException.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwOutsourceGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwOutsourceGroupsDate.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwOutsourceGroupsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlwOutsourceGroupsMng.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnAccounts_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnAccountType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnBasicAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnBook.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnBrEstTransfersAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnBrSettRevenue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnBrTransfersAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnBudget.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnBudgetDiscretion.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnCheck.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnCheeck.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnCostCenter.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnDaysList_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnDisscountBenfit.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnEstTransfer.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FNExpens.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FNExpenses_SMS.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnFinancialFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnFinancialFilesSub.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnFinancialJob.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnFinishProcess.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnFinYear.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnJournal.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnMonth.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnN5Emps.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnN5Files.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnN5s.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnN5SubOrders.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnOpenAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnOverTime.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnParentsAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnPaymentBankAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnPaymentEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnPaymentOrder.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnPaymentVoucher.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnPreBook.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnPreBooksEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnReciptVoucher.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSetting.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSettlement.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FNSm.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSmsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSubBook.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSubFBPreLink.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSubJournal.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSubN5s.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSubPaymentOrder.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSubPreLink.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnSubSettlement.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnTransfer.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FnTransferRegisteration.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrAdvance.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrEmpsDirection.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrEmpsEval.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrEval.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GDNCDocumentsExtension.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HrJobDescriptionRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HrPrivilegesRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HrPrivilegesRequestsProcess.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HrProcess.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HrSalaryPayRoll.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HrSystem.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntIntedabRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntIntedabRequestsLastInt.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntIntedabsCity.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntIntedabsCountry.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntIntedabsDirectionsDepartmentsSetting.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntIntedabsDirectionsSetting.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntRequestsCity.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntRequestsCountry.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntRequestsFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IssueTransfair.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbAnalys.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbAnalyser.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbAnalysesFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbBrAnalysisMaterial.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbIssue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbJournal.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbMaterial.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbMaterialsFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LbSample.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadersCours.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadersNegative.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadersNomination.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadersNominationsCours.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadersPosition.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfAppointment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfDesciplinary.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfIssDef.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfIssEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfIssue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfIssuesFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfIssuesReceiver.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfMngNote.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LfPunishment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="List_DaysOfMonth_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mandate.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MandateGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MgAppointement.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MgBfRqOrder.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MgBuffetOrder.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MgClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MlBrRecordsVisitor.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MlExit.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MLSuspend.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MlSuspendsCrime.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MLVisitor.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MlVisitRecord.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MngInfoFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MobilesKind.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MpTicket.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalCurrency.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalDesign.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalElement.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalElementsImage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalEmail.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalLanguage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalPage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalSection.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalSectionCategory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalSectionProduct.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalTemplate.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyPortalWebsite.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NfBrUser.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NfNotification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NfType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NICIssue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NICPerson.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NICSubestance.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NICSuspect.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Occupied_Vacancies.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OTrainee.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OverTimeCalc.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OverTimeOrder.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PagedPermittedAndCreatedBy_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PagedPermitted_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PosSale.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PosSalesReturn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrBrCommLevel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrCommitty.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrEmpPoint.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrEmpPointsSetting.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Project.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsAchievment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsBrPostsGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsBrPostsSystem.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsPost.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsPostsFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsSeenPost.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcAddService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcAllowance.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcAnnexation.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcAssignment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcBnsRwdAln.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcBrCommittiesEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcBrLevelSupport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcCommissioning.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcCommitty.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcDelegate.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcEmpsAddress.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcEmpsCard.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcEmpsCommunication.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcEmpsDecumentationsType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcEmpsDocumentation.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcEmpsPhone.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcJobExtend.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcMedal.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcPosition.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcPrevService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcPromotion.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcQlfsType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcQualification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcRetirement.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcSenior.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcSpcType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcSpecialNumber.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcSupport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcSuspend.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcTransition.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RcUpdate.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReasonOfEndOfService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptsDetail.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptsDetailsMember.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptsMember.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptsType.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivingsDepartment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivingsDetailsMember.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivingsLevel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RecordsPermitted_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RecordsUpdateRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RgEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RtDue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SanedDocumentsExtension.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScAttribute.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScBanksAccount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScCategory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScClient.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScCommission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScCommissionsEmployee.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScInventoriesIn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScInventoriesOut.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScInventory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScInventoryEmployee.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScInventoryProcess.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScMarkterGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScMarkterGroupSub.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScMarkterPromo.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScOnlinePOS.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPackage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPackageHistory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPackagesAttribute.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPackagesImage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPaymentSetting.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScProduct.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScProductCost.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScProductPrice.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScProductsCategory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScProductsImage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPurchaseReturn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPurchasesInvoice.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScPurchasesRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScRelatedProduct.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSalesInvoice.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSalesRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSalesReturn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScShipmentNaqel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScShipmentRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScShippingCompany.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScShippingCompanyFromCity.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScShippingCompanyToCity.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScShippingPackage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSpecialOffer.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSpecialOffersService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubClientMarkter.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubCommission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubInventoriesIn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubInventoriesOut.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubInventory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubInventoryProcess.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubProductPricesService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubPurchaseExtraFee.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubPurchaseInvoice.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubPurchaseRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubPurchaseReturn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubSalesExtraFee.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubSalesInvoice.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubSalesInvoiceTransaction.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubSalesRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubSalesReturn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubSpecialOffer.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSubSpecialOffers2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScSuplierEvaluation.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SessionLog.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlCompany.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlDeduction.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlDeductsMaterial.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlInternal.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlInternalMaterial.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlLicens.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlLicensesMaterial.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlMaterial.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SlPrisoner.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMSContact.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMSGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsIssue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsReportsNote.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubProductTable.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyFuelsIn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyFuelsOut.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyFuelsPeriod.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysBrPrmsDirection.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysBrSystemUser.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysBrUserGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysClassification.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysGroupPermission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysMailsLog.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysMailsLogsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysMailsLogsMailsAddress.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysMailsProfile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysMsg.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysMsgFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysMsgsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysOfflineSMSs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysOnlineUser.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPagesClass.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPagesDepartment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPagesDirection.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPagesEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPagesGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPagesLevel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPagesSystem.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPages_1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPc.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysPgsPrm.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysRedirect.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysReportsFooter.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysReportsPage.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysReportsSetting.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysScreen.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSMSsLog.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSMSsLogsCellNumber.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSMSsLogsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSMSsProfile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSubHirSearchPermission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSubPermission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSubReportsSetting.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysSystem.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysTable.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemServicesHistory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysTimer.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysTrash.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysUserBrowser.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sys_Reports.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TpModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TpModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TpModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TpModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TpModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TreeAccounts_Result.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TsError.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TsTicket.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TsTicketsFile.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TsTicketsMsg.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GenerateIdTest.cs" />
+    <Compile Include="VWAnnualTraining.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues1_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues1_2_Copy.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues4.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues4_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues4_Subs_Copy.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues5_2_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues5_3_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues5_4.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues6_1_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues6_2_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues7.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashboardIssues8.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardIT_3.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboardKPI_EmpInVacationCNT.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardMadarReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardReports1Status.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardReports2Transfers.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardReports3Types.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardSuspects_1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardSuspects_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardTraining.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardTraining_1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardTraining_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardTraining_3.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles1_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles2_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles3.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles3_1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles3_1_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles3_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles3_2_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles3_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles4.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles4_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles5.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehicles5_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoardVehiclesAll.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR1_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR1_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR3.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR3_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR4.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR4_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR5.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWDashboard_HR5_Subs.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwDashBoard_INV_1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwEmployee.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFlwAttendeesDetail.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFlwEmpsAttendeesDetail.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFlwOutSourceAttendeesDetail.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnAccountsAmount.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnEdbara.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnJournal.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnJournalSettlement.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnJournalsSub.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnJournals_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnMonthlyBalaceIncome.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnMonthlyBalanceExpens.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWFnMonthlyBalance_3.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnMonthlyBalance_4.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnMonthlyBalance_5.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnMonthlyTable1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnMonthlyTable2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwFnMonthlyTable3.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwGDNCArchiveDocumentsStore.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwGDNCDocumentsStore.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwGDNCIssuesDocumentsStore.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwGDNCMadarDocumentsStore.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN10s.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN16Depts.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN16DetailsDepts.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN16DetailsDirections.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN16DetailsEmps.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN16Directions.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN16Emps.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN4Details.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN4s.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN5Details.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvN5s.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwInvProductsIn.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwMgBuffet.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwPackageHistory.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwPOSMainData.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwPrecursorsLicenesBalance.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitBanksAccountReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitCoordinatesReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitCummunicationsAccountsReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitPersonsIssue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitPersonsReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitPersonsSuspect.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitVehiclesIssue.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitVehiclesReport.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabitVehiclesSuspect.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabit_1.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwRawabit_2.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VWReceiptExemption.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwTrUsersCours.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwUsersPagesCustomPermission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwUsersPagesPermission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwUsersPagesSubPermission.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwWfEmpsService.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VwWfRelatedRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfBrRequestsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfDocsProcess.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfEmpsSign.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModelsClass.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModelsDepartment.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModelsDirection.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModelsEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModelsGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModelsLevel.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfModelsSystem.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfOfflineEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfProcess.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfProcessDep.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfProcessEmp.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfProcessGroup.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WfRequest.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xxJournal.cs">
+      <DependentUpon>TpModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="TpModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TpModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TpModel.edmx.diagram">
+      <DependentUpon>TpModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TpModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TpModel.Context.cs</LastGenOutput>
+      <DependentUpon>TpModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="TpModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TpModel.edmx</DependentUpon>
+      <LastGenOutput>TpModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.1.18\build\net45\MSTest.TestAdapter.targets')" />
+</Project>

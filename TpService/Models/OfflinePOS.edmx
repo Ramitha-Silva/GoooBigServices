@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OfflinePOSDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="SecondName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ThirdName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FamilyName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="IsMale" Type="bit" />
+          <Property Name="BirthDate" Type="date" />
+          <Property Name="BirthPlace" Type="nvarchar" MaxLength="200" />
+          <Property Name="System" Type="int" />
+          <Property Name="SID" Type="nvarchar" MaxLength="15" />
+          <Property Name="SIDPlace" Type="int" />
+          <Property Name="SIDDate" Type="date" />
+          <Property Name="HfNum" Type="nvarchar" MaxLength="50" />
+          <Property Name="HfSource" Type="int" />
+          <Property Name="StartLevelID" Type="int" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="PrevLevelID" Type="int" />
+          <Property Name="PrevLevelDate" Type="date" />
+          <Property Name="LevelID" Type="int" />
+          <Property Name="LevelDate" Type="date" />
+          <Property Name="IsPromUploaded" Type="bit" />
+          <Property Name="NextLevelID" Type="int" />
+          <Property Name="NextLevelDate" Type="date" />
+          <Property Name="RetirementDate" Type="date" />
+          <Property Name="EndReasonType" Type="int" />
+          <Property Name="QlfID" Type="int" />
+          <Property Name="QlfPercent" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="QlfDate" Type="date" />
+          <Property Name="QlfDegree" Type="nvarchar" MaxLength="50" />
+          <Property Name="QlfSpcType" Type="int" />
+          <Property Name="QlfSpcID" Type="int" />
+          <Property Name="DirectionID" Type="int" />
+          <Property Name="DepartmentID" Type="int" />
+          <Property Name="PositionID" Type="int" />
+          <Property Name="DirectManager" Type="int" />
+          <Property Name="GeneralNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="SpNumID" Type="int" />
+          <Property Name="JobCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="SessionNum" Type="int" />
+          <Property Name="SessionName" Type="nvarchar" MaxLength="200" />
+          <Property Name="SessionOrder" Type="int" />
+          <Property Name="IsSessionExtended" Type="bit" />
+          <Property Name="IsRoyalOrdered" Type="bit" />
+          <Property Name="RoyalOrderNum" Type="nvarchar" MaxLength="50" />
+          <Property Name="RoyalOrderDate" Type="date" />
+          <Property Name="LevelNamed" Type="int" />
+          <Property Name="BasicSalary" Type="float" />
+          <Property Name="ActualSalary" Type="float" />
+          <Property Name="MartialState" Type="int" />
+          <Property Name="BankID" Type="int" />
+          <Property Name="AccountNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsRetired" Type="bit" />
+          <Property Name="BloodType" Type="int" />
+          <Property Name="Height" Type="int" />
+          <Property Name="Weight" Type="int" />
+          <Property Name="Details" Type="nvarchar(max)" />
+          <Property Name="IsOnDrugsSector" Type="bit" />
+          <Property Name="IsOnDrugSectorStart" Type="bit" />
+          <Property Name="StartDirection" Type="int" />
+          <Property Name="StartDepartment" Type="int" />
+          <Property Name="Position" Type="nvarchar" MaxLength="200" />
+          <Property Name="PositionDate" Type="date" />
+          <Property Name="PersonalImg" Type="nvarchar(max)" />
+          <Property Name="SIDImgs" Type="nvarchar(max)" />
+          <Property Name="PassPortImg" Type="nvarchar(max)" />
+          <Property Name="CellPhoneNumber" Type="nvarchar" MaxLength="15" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="DomainUserName" Type="nvarchar" MaxLength="200" />
+          <Property Name="OrderBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsTrash" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="CurrentDirectionIsIn" Type="bit" />
+          <Property Name="CurrentDirectionID" Type="int" />
+          <Property Name="EnFirstName" Type="varchar" MaxLength="50" />
+          <Property Name="EnSecondName" Type="varchar" MaxLength="50" />
+          <Property Name="EnThirdName" Type="varchar" MaxLength="50" />
+          <Property Name="EnFamilyName" Type="varchar" MaxLength="50" />
+          <Property Name="EnglishName" Type="varchar" MaxLength="203" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="CurrentDepartmentID" Type="int" />
+          <Property Name="NickName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ActivateKey" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="WebsiteID" Type="bigint" />
+          <Property Name="AccountantNum" Type="int" />
+          <Property Name="IconID" Type="bigint" />
+          <Property Name="FirstPage" Type="varchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'HyperStore2.dbo.VwPOSMainData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="VwPOSMainData">
+          <Key>
+            <PropertyRef Name="wweb" />
+            <PropertyRef Name="wemail" />
+            <PropertyRef Name="wphone" />
+            <PropertyRef Name="wlocation" />
+            <PropertyRef Name="wvat" />
+            <PropertyRef Name="uaddress" />
+            <PropertyRef Name="uemail" />
+            <PropertyRef Name="iid" />
+            <PropertyRef Name="utype" />
+          </Key>
+          <Property Name="wid" Type="bigint" />
+          <Property Name="wname" Type="nvarchar" MaxLength="50" />
+          <Property Name="wbackground" Type="bigint" />
+          <Property Name="wlogo" Type="bigint" />
+          <Property Name="wweb" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="wemail" Type="varchar" MaxLength="17" Nullable="false" />
+          <Property Name="wphone" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="wlocation" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="wvat" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="uaddress" Type="varchar" MaxLength="13" Nullable="false" />
+          <Property Name="uemail" Type="varchar" MaxLength="16" Nullable="false" />
+          <Property Name="wheader" Type="nvarchar(max)" />
+          <Property Name="wfooter" Type="nvarchar(max)" />
+          <Property Name="iid" Type="int" Nullable="false" />
+          <Property Name="iname" Type="nvarchar" MaxLength="100" />
+          <Property Name="utype" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="Admin" Type="int" />
+          <Property Name="Manager" Type="int" />
+          <Property Name="uid" Type="int" />
+          <Property Name="adminid" Type="int" />
+          <Property Name="adminusername" Type="nvarchar" MaxLength="50" />
+          <Property Name="adminpassword" Type="nvarchar(max)" />
+          <Property Name="managerusername" Type="nvarchar" MaxLength="50" />
+          <Property Name="managerpassword" Type="nvarchar(max)" />
+          <Property Name="salesusername" Type="nvarchar" MaxLength="50" />
+          <Property Name="salespassword" Type="nvarchar(max)" />
+          <Property Name="uname" Type="nvarchar" MaxLength="200" />
+          <Property Name="uusername" Type="nvarchar" MaxLength="50" />
+          <Property Name="upass" Type="nvarchar(max)" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Employees_Employees">
+          <End Role="Employees" Type="Self.Employees" Multiplicity="0..1" />
+          <End Role="Employees1" Type="Self.Employees" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Employees1">
+              <PropertyRef Name="DirectManager" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OfflinePOSDataModelStoreContainer">
+          <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VwPOSMainData" EntityType="Self.VwPOSMainData" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [VwPOSMainData].[wid] AS [wid], 
+    [VwPOSMainData].[wname] AS [wname], 
+    [VwPOSMainData].[wbackground] AS [wbackground], 
+    [VwPOSMainData].[wlogo] AS [wlogo], 
+    [VwPOSMainData].[wweb] AS [wweb], 
+    [VwPOSMainData].[wemail] AS [wemail], 
+    [VwPOSMainData].[wphone] AS [wphone], 
+    [VwPOSMainData].[wlocation] AS [wlocation], 
+    [VwPOSMainData].[wvat] AS [wvat], 
+    [VwPOSMainData].[uaddress] AS [uaddress], 
+    [VwPOSMainData].[uemail] AS [uemail], 
+    [VwPOSMainData].[wheader] AS [wheader], 
+    [VwPOSMainData].[wfooter] AS [wfooter], 
+    [VwPOSMainData].[iid] AS [iid], 
+    [VwPOSMainData].[iname] AS [iname], 
+    [VwPOSMainData].[utype] AS [utype], 
+    [VwPOSMainData].[Admin] AS [Admin], 
+    [VwPOSMainData].[Manager] AS [Manager], 
+    [VwPOSMainData].[uid] AS [uid], 
+    [VwPOSMainData].[adminid] AS [adminid], 
+    [VwPOSMainData].[adminusername] AS [adminusername], 
+    [VwPOSMainData].[adminpassword] AS [adminpassword], 
+    [VwPOSMainData].[managerusername] AS [managerusername], 
+    [VwPOSMainData].[managerpassword] AS [managerpassword], 
+    [VwPOSMainData].[salesusername] AS [salesusername], 
+    [VwPOSMainData].[salespassword] AS [salespassword], 
+    [VwPOSMainData].[uname] AS [uname], 
+    [VwPOSMainData].[uusername] AS [uusername], 
+    [VwPOSMainData].[upass] AS [upass], 
+    [VwPOSMainData].[FirstName] AS [FirstName]
+    FROM [dbo].[VwPOSMainData] AS [VwPOSMainData]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Employees_Employees" Association="Self.FK_Employees_Employees">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="Employees1" EntitySet="Employees" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OfflinePOSDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="VwPOSMainData">
+          <Key>
+            <PropertyRef Name="wweb" />
+            <PropertyRef Name="wemail" />
+            <PropertyRef Name="wphone" />
+            <PropertyRef Name="wlocation" />
+            <PropertyRef Name="wvat" />
+            <PropertyRef Name="iid" />
+            <PropertyRef Name="utype" />
+            <PropertyRef Name="uaddress" />
+            <PropertyRef Name="uemail" />
+          </Key>
+          <Property Name="wid" Type="Int64" />
+          <Property Name="wname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="wbackground" Type="Int64" />
+          <Property Name="wlogo" Type="Int64" />
+          <Property Name="wweb" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="wemail" Type="String" MaxLength="17" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="wphone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="wlocation" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="wvat" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="wheader" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="wfooter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="iid" Type="Int32" Nullable="false" />
+          <Property Name="iname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="utype" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin" Type="Int32" />
+          <Property Name="manager" Type="Int32" />
+          <Property Name="uid" Type="Int32" />
+          <Property Name="adminid" Type="Int32" />
+          <Property Name="adminusername" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="adminpassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="managerusername" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="managerpassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="salesusername" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="salespassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="uname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="uusername" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="upass" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="uaddress" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
+          <Property Name="uemail" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Manager" Type="Int32" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="OfflinePOSConnection" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="VwPOSMainDatas" EntityType="Self.VwPOSMainData" />
+          <EntitySet Name="Employees" EntityType="OfflinePOSDataModel.Employee" />
+          <AssociationSet Name="FK_Employees_Employees" Association="OfflinePOSDataModel.FK_Employees_Employees">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Employee1" EntitySet="Employees" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ThirdName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FamilyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FullName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="IsMale" Type="Boolean" />
+          <Property Name="BirthDate" Type="DateTime" Precision="0" />
+          <Property Name="BirthPlace" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="System" Type="Int32" />
+          <Property Name="SID" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="SIDPlace" Type="Int32" />
+          <Property Name="SIDDate" Type="DateTime" Precision="0" />
+          <Property Name="HfNum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HfSource" Type="Int32" />
+          <Property Name="StartLevelID" Type="Int32" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" />
+          <Property Name="PrevLevelID" Type="Int32" />
+          <Property Name="PrevLevelDate" Type="DateTime" Precision="0" />
+          <Property Name="LevelID" Type="Int32" />
+          <Property Name="LevelDate" Type="DateTime" Precision="0" />
+          <Property Name="IsPromUploaded" Type="Boolean" />
+          <Property Name="NextLevelID" Type="Int32" />
+          <Property Name="NextLevelDate" Type="DateTime" Precision="0" />
+          <Property Name="RetirementDate" Type="DateTime" Precision="0" />
+          <Property Name="EndReasonType" Type="Int32" />
+          <Property Name="QlfID" Type="Int32" />
+          <Property Name="QlfPercent" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="QlfDate" Type="DateTime" Precision="0" />
+          <Property Name="QlfDegree" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="QlfSpcType" Type="Int32" />
+          <Property Name="QlfSpcID" Type="Int32" />
+          <Property Name="DirectionID" Type="Int32" />
+          <Property Name="DepartmentID" Type="Int32" />
+          <Property Name="PositionID" Type="Int32" />
+          <Property Name="DirectManager" Type="Int32" />
+          <Property Name="GeneralNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SpNumID" Type="Int32" />
+          <Property Name="JobCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SessionNum" Type="Int32" />
+          <Property Name="SessionName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SessionOrder" Type="Int32" />
+          <Property Name="IsSessionExtended" Type="Boolean" />
+          <Property Name="IsRoyalOrdered" Type="Boolean" />
+          <Property Name="RoyalOrderNum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RoyalOrderDate" Type="DateTime" Precision="0" />
+          <Property Name="LevelNamed" Type="Int32" />
+          <Property Name="BasicSalary" Type="Double" />
+          <Property Name="ActualSalary" Type="Double" />
+          <Property Name="MartialState" Type="Int32" />
+          <Property Name="BankID" Type="Int32" />
+          <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsRetired" Type="Boolean" />
+          <Property Name="BloodType" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+          <Property Name="Weight" Type="Int32" />
+          <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsOnDrugsSector" Type="Boolean" />
+          <Property Name="IsOnDrugSectorStart" Type="Boolean" />
+          <Property Name="StartDirection" Type="Int32" />
+          <Property Name="StartDepartment" Type="Int32" />
+          <Property Name="Position" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PositionDate" Type="DateTime" Precision="0" />
+          <Property Name="PersonalImg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SIDImgs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PassPortImg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CellPhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DomainUserName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="OrderBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="IsTrash" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CurrentDirectionIsIn" Type="Boolean" />
+          <Property Name="CurrentDirectionID" Type="Int32" />
+          <Property Name="EnFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EnSecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EnThirdName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EnFamilyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EnglishName" Type="String" Nullable="false" MaxLength="203" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="CurrentDepartmentID" Type="Int32" />
+          <Property Name="NickName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ActivateKey" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WebsiteID" Type="Int64" />
+          <Property Name="AccountantNum" Type="Int32" />
+          <Property Name="IconID" Type="Int64" />
+          <Property Name="FirstPage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Employees1" Relationship="OfflinePOSDataModel.FK_Employees_Employees" FromRole="Employee" ToRole="Employee1" />
+          <NavigationProperty Name="Employee1" Relationship="OfflinePOSDataModel.FK_Employees_Employees" FromRole="Employee1" ToRole="Employee" />
+        </EntityType>
+        <Association Name="FK_Employees_Employees">
+          <End Type="OfflinePOSDataModel.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="OfflinePOSDataModel.Employee" Role="Employee1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Employee1">
+              <PropertyRef Name="DirectManager" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OfflinePOSDataModelStoreContainer" CdmEntityContainer="OfflinePOSConnection">
+          <EntitySetMapping Name="VwPOSMainDatas">
+            <EntityTypeMapping TypeName="OfflinePOSDataModel.VwPOSMainData">
+              <MappingFragment StoreEntitySet="VwPOSMainData">
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Manager" ColumnName="Manager" />
+                <ScalarProperty Name="uemail" ColumnName="uemail" />
+                <ScalarProperty Name="uaddress" ColumnName="uaddress" />
+                <ScalarProperty Name="wid" ColumnName="wid" />
+                <ScalarProperty Name="wname" ColumnName="wname" />
+                <ScalarProperty Name="wbackground" ColumnName="wbackground" />
+                <ScalarProperty Name="wlogo" ColumnName="wlogo" />
+                <ScalarProperty Name="wweb" ColumnName="wweb" />
+                <ScalarProperty Name="wemail" ColumnName="wemail" />
+                <ScalarProperty Name="wphone" ColumnName="wphone" />
+                <ScalarProperty Name="wlocation" ColumnName="wlocation" />
+                <ScalarProperty Name="wvat" ColumnName="wvat" />
+                <ScalarProperty Name="wheader" ColumnName="wheader" />
+                <ScalarProperty Name="wfooter" ColumnName="wfooter" />
+                <ScalarProperty Name="iid" ColumnName="iid" />
+                <ScalarProperty Name="iname" ColumnName="iname" />
+                <ScalarProperty Name="utype" ColumnName="utype" />
+                <ScalarProperty Name="Admin" ColumnName="Admin" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="adminid" ColumnName="adminid" />
+                <ScalarProperty Name="adminusername" ColumnName="adminusername" />
+                <ScalarProperty Name="adminpassword" ColumnName="adminpassword" />
+                <ScalarProperty Name="managerusername" ColumnName="managerusername" />
+                <ScalarProperty Name="managerpassword" ColumnName="managerpassword" />
+                <ScalarProperty Name="salesusername" ColumnName="salesusername" />
+                <ScalarProperty Name="salespassword" ColumnName="salespassword" />
+                <ScalarProperty Name="uname" ColumnName="uname" />
+                <ScalarProperty Name="uusername" ColumnName="uusername" />
+                <ScalarProperty Name="upass" ColumnName="upass" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="OfflinePOSDataModel.Employee">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="FirstPage" ColumnName="FirstPage" />
+                <ScalarProperty Name="IconID" ColumnName="IconID" />
+                <ScalarProperty Name="AccountantNum" ColumnName="AccountantNum" />
+                <ScalarProperty Name="WebsiteID" ColumnName="WebsiteID" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ActivateKey" ColumnName="ActivateKey" />
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="CurrentDepartmentID" ColumnName="CurrentDepartmentID" />
+                <ScalarProperty Name="EnglishName" ColumnName="EnglishName" />
+                <ScalarProperty Name="EnFamilyName" ColumnName="EnFamilyName" />
+                <ScalarProperty Name="EnThirdName" ColumnName="EnThirdName" />
+                <ScalarProperty Name="EnSecondName" ColumnName="EnSecondName" />
+                <ScalarProperty Name="EnFirstName" ColumnName="EnFirstName" />
+                <ScalarProperty Name="CurrentDirectionID" ColumnName="CurrentDirectionID" />
+                <ScalarProperty Name="CurrentDirectionIsIn" ColumnName="CurrentDirectionIsIn" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsTrash" ColumnName="IsTrash" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+                <ScalarProperty Name="DomainUserName" ColumnName="DomainUserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="CellPhoneNumber" ColumnName="CellPhoneNumber" />
+                <ScalarProperty Name="PassPortImg" ColumnName="PassPortImg" />
+                <ScalarProperty Name="SIDImgs" ColumnName="SIDImgs" />
+                <ScalarProperty Name="PersonalImg" ColumnName="PersonalImg" />
+                <ScalarProperty Name="PositionDate" ColumnName="PositionDate" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="StartDepartment" ColumnName="StartDepartment" />
+                <ScalarProperty Name="StartDirection" ColumnName="StartDirection" />
+                <ScalarProperty Name="IsOnDrugSectorStart" ColumnName="IsOnDrugSectorStart" />
+                <ScalarProperty Name="IsOnDrugsSector" ColumnName="IsOnDrugsSector" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="BloodType" ColumnName="BloodType" />
+                <ScalarProperty Name="IsRetired" ColumnName="IsRetired" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="BankID" ColumnName="BankID" />
+                <ScalarProperty Name="MartialState" ColumnName="MartialState" />
+                <ScalarProperty Name="ActualSalary" ColumnName="ActualSalary" />
+                <ScalarProperty Name="BasicSalary" ColumnName="BasicSalary" />
+                <ScalarProperty Name="LevelNamed" ColumnName="LevelNamed" />
+                <ScalarProperty Name="RoyalOrderDate" ColumnName="RoyalOrderDate" />
+                <ScalarProperty Name="RoyalOrderNum" ColumnName="RoyalOrderNum" />
+                <ScalarProperty Name="IsRoyalOrdered" ColumnName="IsRoyalOrdered" />
+                <ScalarProperty Name="IsSessionExtended" ColumnName="IsSessionExtended" />
+                <ScalarProperty Name="SessionOrder" ColumnName="SessionOrder" />
+                <ScalarProperty Name="SessionName" ColumnName="SessionName" />
+                <ScalarProperty Name="SessionNum" ColumnName="SessionNum" />
+                <ScalarProperty Name="JobCode" ColumnName="JobCode" />
+                <ScalarProperty Name="SpNumID" ColumnName="SpNumID" />
+                <ScalarProperty Name="GeneralNo" ColumnName="GeneralNo" />
+                <ScalarProperty Name="DirectManager" ColumnName="DirectManager" />
+                <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="DirectionID" ColumnName="DirectionID" />
+                <ScalarProperty Name="QlfSpcID" ColumnName="QlfSpcID" />
+                <ScalarProperty Name="QlfSpcType" ColumnName="QlfSpcType" />
+                <ScalarProperty Name="QlfDegree" ColumnName="QlfDegree" />
+                <ScalarProperty Name="QlfDate" ColumnName="QlfDate" />
+                <ScalarProperty Name="QlfPercent" ColumnName="QlfPercent" />
+                <ScalarProperty Name="QlfID" ColumnName="QlfID" />
+                <ScalarProperty Name="EndReasonType" ColumnName="EndReasonType" />
+                <ScalarProperty Name="RetirementDate" ColumnName="RetirementDate" />
+                <ScalarProperty Name="NextLevelDate" ColumnName="NextLevelDate" />
+                <ScalarProperty Name="NextLevelID" ColumnName="NextLevelID" />
+                <ScalarProperty Name="IsPromUploaded" ColumnName="IsPromUploaded" />
+                <ScalarProperty Name="LevelDate" ColumnName="LevelDate" />
+                <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+                <ScalarProperty Name="PrevLevelDate" ColumnName="PrevLevelDate" />
+                <ScalarProperty Name="PrevLevelID" ColumnName="PrevLevelID" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="StartLevelID" ColumnName="StartLevelID" />
+                <ScalarProperty Name="HfSource" ColumnName="HfSource" />
+                <ScalarProperty Name="HfNum" ColumnName="HfNum" />
+                <ScalarProperty Name="SIDDate" ColumnName="SIDDate" />
+                <ScalarProperty Name="SIDPlace" ColumnName="SIDPlace" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="System" ColumnName="System" />
+                <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="IsMale" ColumnName="IsMale" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="FamilyName" ColumnName="FamilyName" />
+                <ScalarProperty Name="ThirdName" ColumnName="ThirdName" />
+                <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

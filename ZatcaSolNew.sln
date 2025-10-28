@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gooobig Services", "TpService\Gooobig Services.csproj", "{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Production|Any CPU = Production|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Production|Any CPU.Build.0 = Production|Any CPU
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{A04AEED8-9B0C-4B95-A069-CF8C7670FB2D}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A77ABB72-6C4A-41AC-AF7C-9101615EAB6A}
+	EndGlobalSection
+EndGlobal

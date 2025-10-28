@@ -1,0 +1,136 @@
+@{
+    ViewBag.Title = "API Home";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        .endpoint {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #4CAF50;
+            border-radius: 4px;
+        }
+        .method {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .get {
+            background-color: #61affe;
+            color: white;
+        }
+        .post {
+            background-color: #49cc90;
+            color: white;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gooobig Services API</h1>
+        <p>Welcome to the Gooobig Services Web API. This service provides endpoints for ZATCA (Zakat, Tax and Customs Authority) integration.</p>
+        
+        <h2>Available Endpoints</h2>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/Zatca/CheckPostMan</code>
+            <p>Test endpoint to verify API is running</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/Zatca/getInvoices</code>
+            <p>Retrieve sales invoices (requires auth_key header)</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/Zatca/getInvoiceDetails?invId={id}</code>
+            <p>Get detailed information for a specific invoice (requires auth_key header)</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/Zatca/ComplianceCSID</code>
+            <p>Submit compliance CSID request (requires auth_key header)</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/Zatca/ProductionCSIDOnBoarding</code>
+            <p>Production CSID onboarding (requires auth_key header)</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/Zatca/ProductionCSIDRenewal</code>
+            <p>Renew production CSID (requires auth_key header)</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/Zatca/ComplianceInvoices</code>
+            <p>Submit compliance invoices for validation</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/Zatca/TestInvoices?invoiceid={id}</code>
+            <p>Test invoice generation</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/Zatca/TestInvoices2?invoiceid={id}</code>
+            <p>Test invoice submission to ZATCA</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/Zatca/PostInvoice?invoiceid={id}&invoiceType={type}</code>
+            <p>Post invoice to ZATCA using GenerateXml method (invoiceType: 1=standard, 2=simplified)</p>
+        </div>
+        
+        <h2>Authentication</h2>
+        <p>Most endpoints require an <code>auth_key</code> header for authentication. Please ensure you include this in your requests.</p>
+    </div>
+</body>
+</html>

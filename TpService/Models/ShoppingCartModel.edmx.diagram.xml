@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c1578702afe4867a3b46926023b0f71" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="ShoppingCartDataModel.EmployeePosAuth" Width="1.5" PointX="10.25" PointY="87" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.Employee" Width="1.5" PointX="8" PointY="67.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeChangePassword" Width="1.5" PointX="7" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeRating" Width="1.5" PointX="13.25" PointY="100" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeTempCart" Width="1.5" PointX="7" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeUser" Width="1.5" PointX="11" PointY="99.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeUsersOrder" Width="1.5" PointX="13.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeUsersRating" Width="1.5" PointX="10.25" PointY="44.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeUsersStatictic" Width="1.5" PointX="13" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeUsersSubscription" Width="1.5" PointX="15" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalCurrency" Width="1.5" PointX="21" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalDesign" Width="1.5" PointX="26" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalElement" Width="1.5" PointX="26" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalElementsImage" Width="1.5" PointX="28.25" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalEmail" Width="1.5" PointX="23.25" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalLanguage" Width="1.5" PointX="28" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalPage" Width="1.5" PointX="28" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalSectionCategory" Width="1.5" PointX="13.25" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalSectionProduct" Width="1.5" PointX="10.25" PointY="41.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalSection" Width="1.5" PointX="8" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalService" Width="1.5" PointX="13" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalTemplate" Width="1.5" PointX="28.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalWebsite" Width="1.5" PointX="21" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScAttribute" Width="1.5" PointX="5" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScBanksAccount" Width="1.5" PointX="15" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScCategory" Width="1.5" PointX="11" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScCommission" Width="1.5" PointX="11" PointY="81.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScCommissionsEmployee" Width="1.5" PointX="13.25" PointY="77.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScInventoriesIn" Width="1.5" PointX="11" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScInventoriesOut" Width="1.5" PointX="8" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScInventoryEmployee" Width="1.5" PointX="10.25" PointY="73.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScInventoryProcess" Width="2.75" PointX="0.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScMarkterGroup" Width="1.5" PointX="2" PointY="66.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScMarkterGroupSub" Width="1.5" PointX="4.25" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScMarkterPromo" Width="1.5" PointX="18.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackageHistory" Width="1.5" PointX="30" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackagesAttribute" Width="1.5" PointX="7.25" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackagesImage" Width="1.5" PointX="4.25" PointY="94.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPaymentSetting" Width="1.5" PointX="31" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScProductCost" Width="1.5" PointX="31" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScProductPrice" Width="1.5" PointX="4.25" PointY="96.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScProductsCategory" Width="1.5" PointX="13.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScProductsImage" Width="1.5" PointX="13.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPurchaseReturn" Width="1.5" PointX="5" PointY="52.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPurchasesInvoice" Width="1.5" PointX="5" PointY="59.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPurchasesRequest" Width="1.875" PointX="7.625" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScRelatedProduct" Width="1.5" PointX="13.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesRequest" Width="1.5" PointX="2" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScService" Width="1.5" PointX="4.25" PointY="89.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScShipmentNaqel" Width="1.5" PointX="25.875" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScShipmentRequest" Width="1.5" PointX="23.625" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScShippingCompany" Width="1.875" PointX="21" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScShippingCompanyFromCity" Width="1.5" PointX="23.625" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScShippingCompanyToCity" Width="1.5" PointX="23.625" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSpecialOffer" Width="1.5" PointX="11" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSpecialOffersService" Width="1.5" PointX="13.25" PointY="70.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubClientMarkter" Width="1.5" PointX="18.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubCommission" Width="1.5" PointX="13.25" PointY="83.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubInventory" Width="1.5" PointX="4.25" PointY="46.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubProductPricesService" Width="1.5" PointX="6.5" PointY="98" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubPurchaseExtraFee" Width="1.5" PointX="7.25" PointY="90.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubPurchaseReturn" Width="1.5" PointX="7.25" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesRequest" Width="2" PointX="4.25" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSpecialOffer" Width="1.5" PointX="13.25" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSuplierEvaluation" Width="1.5" PointX="4" PointY="16.75" IsExpanded="true" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_EmployeePosAuth_ToEmp" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_Employees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_FeUsersRatings_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScCommissionsEmployees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScInventoryEmployees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_FeRatings_FeRatings" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_FeUsersOrders_FeUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalTemplates_MyPortalDesigns" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalElementsImages_To_MyPortalElements_" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalEmails_MyPortalWebsites" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalSectionCategories_MyPortalSections" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalSectionCategories_ScCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalSectionProducts_MyPortalSections" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPackagesAttributes_ScAttributes" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScProductsCategories_ScCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScCommissionsEmployees_ScCommissions" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubCommissions_ScCommissions" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScMarkterGroupSubs_ScMarkterGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubProductPricesServices_ScProductPrices" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPurchaseReturns_ScSubPurchaseReturns" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPurchaseExtraFees_ScPurchasesInvoices" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScShipmentRequests_ScSalesRequests" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesRequest_ScSalesRequests" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSpecialOffersServices_ScServices" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubProductPricesServices_ScServices" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScShipmentNaqel_ScShipmentRequests" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScShipmentRequests_ScShippingCompanies" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScShippingCompanyFromCities_ScShippingCompanies" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScShippingCompanyToCities_ScShippingCompanies" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSpecialOffersServices_ScSpecialOffers" ManuallyRouted="false" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSpecialOffers_ScSpecialOffers" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SysScreen" Width="1.5" PointX="4.25" PointY="2" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SysPage" Width="1.5" PointX="2" PointY="1.25" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_Pages_Pages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_SysFvScreens_SysPages" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwGDNCDocumentsStore" Width="1.5" PointX="31" PointY="10.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.PosSale" Width="1.5" PointX="31" PointY="25.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FnFinYear" Width="1.5" PointX="32" PointY="14.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesInvoicePaymentsType" Width="2.875" PointX="10.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPosBox" Width="1.5" PointX="21" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwPackageHistory" Width="1.5" PointX="31" PointY="30.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsMeasureType" Width="1.5" PointX="32" PointY="20.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubPurchaseRequest" Width="1.5" PointX="10.25" PointY="38.25" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPurchaseRequest_ScPurchasesRequests" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScInventoryProcessesContinue" Width="1.5" PointX="5" PointY="20" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.NfNotification" Width="1.5" PointX="6.5" PointY="5.625" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.NfType" Width="1.5" PointX="4.25" PointY="5" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_NfNotifications_NfTypes" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_NfTypes_SysPages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_NfTypes_SysPages1" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_NfTypes_SysPages2" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_SysPages_NfTypes" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.NfBrUser" Width="1.5" PointX="8.75" PointY="6.5" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_NfUsers_NfNotifications" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.EmployeePosAuthentication" Width="1.5" PointX="10.25" PointY="89.875" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_EmployeePosAuth1_ToEmp" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPayQitaf" Width="1.5" PointX="18.25" PointY="10.875" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPayStc" Width="1.5" PointX="18.25" PointY="17.25" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPointCategory" Width="1.5" PointX="33" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScOfflinePOS" Width="1.5" PointX="33" PointY="25.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPosRole" Width="1.5" PointX="28" PointY="31.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FeUsersAddress" Width="1.5" PointX="11" PointY="106.375" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesInvoicesShippingAddress" Width="1.5" PointX="13.25" PointY="25.375" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSalesInvoicesShippingAddresses_ScSalesInvoices" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.PsPost" Width="1.5" PointX="11" PointY="70.25" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.PsSeenPost" Width="1.5" PointX="13.25" PointY="74.25" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_PsSeenPosts_Employees" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_PsSeenPosts_Employees1" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_PsSeenPosts_PsPosts" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsVidLibrary" Width="1.5" PointX="33" PointY="30.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MgClassification" Width="1.5" PointX="2" PointY="12" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MgBfRqOrder" Width="1.5" PointX="4.25" PointY="12.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MgBuffetOrder" Width="1.5" PointX="2" PointY="17.5" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MgBfRqOrders_MgBuffetOrders" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MgBfRqOrders_MgClassifications" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsDirectionDepartment" Width="1.5" PointX="10.25" PointY="76.25" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsDirection" Width="1.5" PointX="5.75" PointY="78.375" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ClsDirectionDepartments_ClsDirections" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ClsDirectionDepartments_Employees" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_Employees_ClsDirections" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_Employees_ClsDirections1" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_Employees_ClsDirections2" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsDepartmentsStructure" Width="1.5" PointX="5.75" PointY="72" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ClsDepartmentsStructures_ClsDepartmentsStructures" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ClsDirectionDepartments_ClsDepartmentsStructures" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_Employees_ClsDepartmentsStructures" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_Employees_ClsDepartmentsStructures1" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SessionLogApi" Width="1.5" PointX="33" PointY="10.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SysErrorMessage" Width="1.5" PointX="34" PointY="14.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesInvoiceTransaction" Width="1.5" PointX="10.25" PointY="93.875" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesOrderProcess" Width="1.5" PointX="10.25" PointY="22" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScShippingPackage" Width="1.5" PointX="23.625" PointY="13.625" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScShippingPackages_ScShippingCompanies" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScGiftPoint" Width="1.5" PointX="18.25" PointY="23.625" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScOnlinePOS" Width="1.5" PointX="35" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsCity" Width="1.5" PointX="28.25" PointY="6" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsCountry" Width="1.5" PointX="26" PointY="6" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ClsCities_ClsCountries" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackagesDetail" Width="1.5" PointX="4.25" PointY="106.625" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScWorkShift" Width="1.5" PointX="34" PointY="19.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SMSMessage" Width="1.5" PointX="35" PointY="8.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.OfflineInvoicePayment" Width="1.5" PointX="10" PointY="15.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.OfflineInvoiceProduct" Width="1.5" PointX="35" PointY="24.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.OfflineInvoiceService" Width="1.5" PointX="23" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.OfflineScSalesInvoice" Width="1.5" PointX="35" PointY="28.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScWorkShiftsMoney" Width="1.5" PointX="36" PointY="14.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SMSContact" Width="1.5" PointX="28.25" PointY="1" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SMSGroup" Width="1.5" PointX="26" PointY="1.25" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_SMSContacts_SMSGroups" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SMSMessagesTemplete" Width="1.5" PointX="11" PointY="64.125" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SMSMessageTempleteEmployee" Width="1.5" PointX="16.25" PointY="72.75" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_SMSMessageTempleteEmployees_Employees" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_SMSMessageTempleteEmployees_ScInventories" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScOnlinePOSClient" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesReturnInvoicePaymentsType" Width="1.5" PointX="4.25" PointY="102.375" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScGiftCoupon" Width="1.5" PointX="18.25" PointY="30.375" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsPaymentType" Width="1.5" PointX="20.375" PointY="12.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPaymentType" Width="1.5" PointX="20.375" PointY="16.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsTransactionType" Width="1.5" PointX="15.375" PointY="33.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScTransactionType" Width="1.5" PointX="23.375" PointY="35.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPriceCodeProduct" Width="1.5" PointX="35.25" PointY="34.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSpecialOffers2" Width="1.5" PointX="13.25" PointY="44.75" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSpecialOffers2_ScSpecialOffers" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ClsInvoicePaymentType" Width="1.5" PointX="36.375" PointY="20.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScMissingBarcode" Width="1.5" PointX="20.375" PointY="36.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPosDevice" Width="1.5" PointX="37.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScProductRating" Width="1.5" PointX="37.375" PointY="8.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.PgGeideaCallBackPay" Width="1.5" PointX="15.375" PointY="37.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.OpOperationOrder" Width="1.5" PointX="10.25" PointY="112.125" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.OpOperationOrderProcess" Width="1.5" PointX="12.5" PointY="112.5" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_OpOperationOrderProcess_OrdId" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPriceCodeClient" Width="1.5" PointX="35.25" PointY="37.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPriceCodeInventory" Width="1.5" PointX="35.25" PointY="40.25" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScAdditionsTypeProduct" Width="1.5" PointX="13.25" PointY="16" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScInventory" Width="1.5" PointX="17.375" PointY="38.125" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScInventoryEmployees_ScInventories" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventories_ScInventories" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackageNote" Width="1.5" PointX="37.375" PointY="24.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScCommandTranferInventory" Width="1.5" PointX="19.625" PointY="60.875" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubDataTranferInventory" Width="1.5" PointX="21.875" PointY="49.75" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScCommandTranferInventories_EmpIDFrom" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScCommandTranferInventories_EmpIDTo" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScCommandTranferInventories_InventoryIDFrom" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScCommandTranferInventories_InventoryIDTo" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubDataTranferInventories_CommandTransferID" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScProcessesDamagedStock" Width="1.5" PointX="11" PointY="118.375" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubProcessesDamagedStock" Width="1.5" PointX="13.25" PointY="49.125" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScProcessesDamagedStock_InvProcessId" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackage" Width="1.5" PointX="0.75" PointY="61.75" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_FeUsersRatings_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalSectionProducts_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScMarkterGroupSubs_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPackagesAttributes_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPackagesDetails_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPackagesImages_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScProcessesDamagedStock_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScProductPrices_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubDataTranferInventories_PackageId" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventories_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPurchaseRequest_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPurchaseReturns_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesRequest_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSpecialOffers_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSpecialOffers2_ScPackages" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScInventoryJahez" Width="1.5" PointX="19.625" PointY="41.375" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScInventoryJahez_ScInventories" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwSalesClientBalance" Width="1.5" PointX="0.75" PointY="35.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FnReciptVoucher" Width="1.5" PointX="37.375" PointY="28.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwInvPackagePOS3" Width="1.5" PointX="30.375" PointY="37.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackagesAddon" Width="1.5" PointX="3" PointY="70.875" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPackagesAddon_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPackagesAddon_ScPackages1" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubInventoriesIn" Width="1.5" PointX="16.25" PointY="48.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubInventoriesOut" Width="1.5" PointX="10.25" PointY="47.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubInventoryProcess" Width="1.5" PointX="13.25" PointY="53.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubInventoryProcessesContinue" Width="1.5" PointX="7.25" PointY="46.375" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubPurchaseInvoice" Width="1.5" PointX="13.25" PointY="64.75" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoriesIns_ScInventoriesIns" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoriesOuts_ScInventoriesOuts" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoryProcesses_ScInventoryProcesses" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoryProcessesContinues_ScInventoryProcessesContinues" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoriesIns_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoriesOuts_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoryProcesses_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubInventoryProcessesContinues_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPurchaseInvoices_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPurchaseInvoices_ScPurchasesInvoices" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwSalesClientInvoice" Width="1.5" PointX="3.375" PointY="35.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScGiftUsedPoint" Width="1.5" PointX="18.25" PointY="53.625" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwInvPackagePOS3DeleteList" Width="1.5" PointX="32.375" PointY="37.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwInvPackagePOS3HideList" Width="1.5" PointX="37.375" PointY="35.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.VwUserLoyalityPoint" Width="1.5" PointX="5.375" PointY="36.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesInvoice" Width="1.5" PointX="0.75" PointY="50.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesReturn" Width="1.5" PointX="3.5" PointY="83.625" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesExtraFee" Width="1.5" PointX="3" PointY="55.875" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesReturnExtraFee" Width="1.5" PointX="5.75" PointY="84.375" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_FeUsersOrders_FeUsersOrders" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_OpOperationOrder_InvId" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSalesInvoicePaymentsTypes_ScSalesInvoicePaymentsTypes" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSalesInvoicesShippingAddresses_FeUsersAddresses" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSalesOrderProcess_ScSalesInvoices" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesExtraFees_ScSalesInvoices" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesInvoiceTransaction_ScSalesInvoices" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSalesReturnInvoicePaymentsTypes_ScSalesReturnInvoicePaymentsTypes" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesReturnExtraFees_ScSalesReturns" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalServerLink" Width="1.5" PointX="23.25" PointY="40.125" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalServerLinks_MyPortalWebsites" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesInvoicesSummary" Width="1.5" PointX="7.375" PointY="26.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPriceCode" Width="1.5" PointX="28" PointY="40" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SnPotentialClient" Width="1.5" PointX="30.5" PointY="46.25" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK__SnPotentialClients_ClsCities" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK__SnPotentialClients_Employees" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_SnPotentialClients_Employees" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPriceCodeClients_ScPriceCode" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPriceCodeInventories_ScPriceCode" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPriceCodeProducts_ScPriceCode" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK__SnPotentialClients_ScServices" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.CgDevicesInfo" Width="1.5" PointX="38.375" PointY="13.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.SnMngActive" Width="1.5" PointX="39.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSalesClientDataBackup" Width="1.5" PointX="7.375" PointY="20.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScPackagesBundle" Width="1.5" PointX="3.25" PointY="74" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubPackagesBundle" Width="1.5" PointX="5.5" PointY="68.75" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPackagesBundle_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPackagesBundle_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubPackagesBundle_ScPackagesBundle" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ThirdAppInfo" Width="1.5" PointX="23.375" PointY="54.375" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.aaa" Width="1.5" PointX="0.75" PointY="21.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScProduct" Width="1.5" PointX="11" PointY="0.75" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScAdditionsTypeProducts_PID" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScProductsCategories_ScProducts" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScProductsImages_ScProducts" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScRelatedProducts_ScProducts" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScRelatedProducts_ScProducts1" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesInvoice" Width="1.5" PointX="11" PointY="58.125" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesReturn" Width="1.5" PointX="15.75" PointY="76" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesInvoices_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesReturns_ScPackages" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesInvoices_ScSalesInvoices" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesReturns_ScSalesInvoices" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesReturnTax" Width="1.5" PointX="5.75" PointY="113" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScSubSalesTax" Width="1.5" PointX="3" PointY="42.5" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesTaxes_ScSubsalesinvoices" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesReturnTaxes_ScSubSalesReturns" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FnSubTaxesGroup" Width="1.5" PointX="41.625" PointY="14" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FnTaxesGroup" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.FnTaxesType" Width="1.5" PointX="39.375" PointY="24.375" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_FnSubTaxesGroup_FnTaxesGroup" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_FnSubTaxesGroup_FnTaxesTypes" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScProducts_FnTaxesGroup" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesReturnTaxes_FnTaxesTypes" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubSalesTaxes_FnTaxesTypes" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.CgMngDevice" Width="1.5" PointX="35.25" PointY="44.625" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ThirdAppConfig" Width="1.5" PointX="25.625" PointY="45.5" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_CgMngDevices_InventoryID" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_CgMngDevices_SiteID" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ThirdAppConfig_ScInventories" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ThirdAppConfig_ThirdAppInfo" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScClient" Width="1.5" PointX="0.75" PointY="21.875" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK__SnPotentialClients_ScClients" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScGiftCoupon_ScClients" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScGiftCoupon_ScGiftCoupon" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScGiftPoint_ScClients" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScGiftPoint_ScGiftPoint" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScGiftUsedPoint_ScClients" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScMarkterPromos_ScClients" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScMarkterPromos_ScMarkterPromos" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPayQitaf_ScClients" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPayQitaf_ScPayQitaf" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPayStc_ScClients" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScPayStc_ScPayStc" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScSubClientMarkters_ScClients" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.MyPortalWebsiteIdentification" Width="1.5" PointX="23.25" PointY="59.375" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.ScClientIdentification" Width="1.5" PointX="3" PointY="79.375" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_MyPortalWebsiteIdentification_MyPortalWebsites" />
+        <AssociationConnector Association="ShoppingCartDataModel.FK_ScClientIdentification_ScClients" />
+        <EntityTypeShape EntityType="ShoppingCartDataModel.CgMngDevicesZatca" Width="1.5" PointX="15.375" PointY="13.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
