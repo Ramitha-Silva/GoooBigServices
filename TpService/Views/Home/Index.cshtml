@@ -129,6 +129,12 @@
             <p>Post invoice to ZATCA using GenerateXml method (invoiceType: 1=standard, 2=simplified)</p>
         </div>
         
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/InvoicePosting/PostInvoice?invoiceid={id}&invoiceType={type}</code>
+            <p><strong>New:</strong> Post invoice using dedicated invoice posting controller with direct XML generation (invoiceType: 1=standard, 2=simplified)</p>
+        </div>
+        
         <h2>Authentication</h2>
         <p>Most endpoints require an <code>auth_key</code> header for authentication. Please ensure you include this in your requests.</p>
     </div>
