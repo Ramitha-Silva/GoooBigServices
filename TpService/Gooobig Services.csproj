@@ -861,6 +861,7 @@
     <Compile Include="Models\Zatca\HelperContracts\InvoiceResultModel.cs" />
     <Compile Include="Models\Zatca\HelperContracts\ValidationResults.cs" />
     <Compile Include="Models\Zatca\HelperContracts\WarningModel.cs" />
+    <Compile Include="ZatcaTools\ZatcaWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
