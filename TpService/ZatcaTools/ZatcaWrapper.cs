@@ -10,8 +10,8 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml;
-using Zatca.EInvoice.SDK;
-using Zatca.EInvoice.SDK.Contracts.Models;
+using ZATCA.EInvoice.SDK;
+using ZATCA.EInvoice.SDK.Contracts.Models;
 
 namespace TpService.ZatcaTools
 {
@@ -30,7 +30,7 @@ namespace TpService.ZatcaTools
 
         public string GenerateInvoiceHash(string xmlInvoicePath)
         {
-            var InvoiceHashGenerator = new Zatca.EInvoice.SDK.EInvoiceHashGenerator();
+            var InvoiceHashGenerator = new ZATCA.EInvoice.SDK.EInvoiceHashGenerator();
             var xmlDoc = new XmlDocument();
             xmlDoc.PreserveWhitespace = true;
             xmlDoc.Load(xmlInvoicePath);
@@ -42,7 +42,7 @@ namespace TpService.ZatcaTools
 
         public void SignInvoice(string certificateContent, string privateKeyContent, string xmlInvoicePath, string signedXmlInvoicePath)
         {
-            var InvoiceSigner = new Zatca.EInvoice.SDK.EInvoiceSigner();
+            var InvoiceSigner = new ZATCA.EInvoice.SDK.EInvoiceSigner();
 
             var xmlDoc = new XmlDocument();
             xmlDoc.PreserveWhitespace = true;
@@ -103,7 +103,7 @@ namespace TpService.ZatcaTools
 
         public string GenerateQRString(string xmlInvoicefile)
         {
-            var InvoiceQRGenerator = new Zatca.EInvoice.SDK.EInvoiceQRGenerator();
+            var InvoiceQRGenerator = new ZATCA.EInvoice.SDK.EInvoiceQRGenerator();
 
             var xmlDoc = new XmlDocument();
             xmlDoc.PreserveWhitespace = true;
@@ -152,7 +152,7 @@ namespace TpService.ZatcaTools
             string organizationUnitName, string organizationName, string countryName, string invoiceType, 
             string locationAddress, string businessCategory, bool pemformat, string etype, string sdkpath)
         {
-            var csrGenerator = new Zatca.EInvoice.SDK.CsrGenerator();
+            var csrGenerator = new ZATCA.EInvoice.SDK.CsrGenerator();
             var kCrypto = new GetKeyValues();
 
             var configObject = new CsrGenerationDto(commonName, serialNo, organizationIdentifier, 
@@ -272,7 +272,7 @@ namespace TpService.ZatcaTools
             string locationAddress, string businessCategory, bool pemformat, string etype, 
             string privatekeyFilePath, string csrFilePath)
         {
-            var csrGenerator = new Zatca.EInvoice.SDK.CsrGenerator();
+            var csrGenerator = new ZATCA.EInvoice.SDK.CsrGenerator();
 
             var configObject = new CsrGenerationDto(commonName, serialNo, organizationIdentifier, 
                 organizationUnitName, organizationName, countryName, invoiceType, locationAddress, businessCategory);
@@ -292,7 +292,7 @@ namespace TpService.ZatcaTools
                 entype = EnvironmentType.Production;
             }
 
-            CsrResult csrResult = csrGenerator.GenerateCsr(configObject, pemformat, entype);
+            CsrResult csrResult = csrGenerator.GenerateCsr(configObject, entype, pemformat);
 
             csrResult.SavePrivateKeyToFile(privatekeyFilePath);
             csrResult.SaveCsrToFile(csrFilePath);
@@ -913,15 +913,15 @@ namespace TpService.ZatcaTools
             return qrCode;
         }
 
-        public void GetQRImage(string imagePath)
-        {
-            string qrCode = GetClearedQrCode();
-            if (qrCode != null)
-            {
-                var qrcodeGenerator = new QRCodeGenerator();
-                QRCodeGenerator.GenerateQRCode(qrCode, 500, 500, imagePath);
-            }
-        }
+        //public void GetQRImage(string imagePath)
+        //{
+        //    string qrCode = GetClearedQrCode();
+        //    if (qrCode != null)
+        //    {
+        //        var qrcodeGenerator = new QRCodeGenerator();
+        //        QRCodeGenerator.GenerateQRCode(qrCode, 500, 500, imagePath);
+        //    }
+        //}
     }
 
     [Guid("49CDF2BE-AB7C-42D0-B460-D8E20D8DF9B5")]

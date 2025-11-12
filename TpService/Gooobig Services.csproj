@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TpService</RootNamespace>
     <AssemblyName>TpService</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -113,9 +113,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -145,6 +145,12 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="ZATCA.EInvoice.SDK">
+      <HintPath>..\sdk\ZATCA.EInvoice.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="ZATCA.EInvoice.SDK.Contracts">
+      <HintPath>..\sdk\ZATCA.EInvoice.SDK.Contracts.dll</HintPath>
+    </Reference>
     <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
       <HintPath>..\packages\ZXing.Net.0.16.9\lib\net461\zxing.dll</HintPath>
     </Reference>
@@ -861,6 +867,7 @@
     <Compile Include="Models\Zatca\HelperContracts\InvoiceResultModel.cs" />
     <Compile Include="Models\Zatca\HelperContracts\ValidationResults.cs" />
     <Compile Include="Models\Zatca\HelperContracts\WarningModel.cs" />
+    <Compile Include="ZatcaTools\InvoiceService.cs" />
     <Compile Include="ZatcaTools\ZatcaWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
