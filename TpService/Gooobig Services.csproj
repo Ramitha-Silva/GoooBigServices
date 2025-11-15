@@ -574,6 +574,15 @@
     <Compile Include="Models\ScSalesInvoicesSummary.cs">
       <DependentUpon>ShoppingCartModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ScSalesInvoicesZatca.cs">
+      <DependentUpon>ShoppingCartModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ScSalesInvoicesZatcaPIH.cs">
+      <DependentUpon>ShoppingCartModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ScSalesInvoicesZatcaPIHError.cs">
+      <DependentUpon>ShoppingCartModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ScSalesOrderProcess.cs">
       <DependentUpon>ShoppingCartModel.tt</DependentUpon>
     </Compile>
@@ -867,7 +876,7 @@
     <Compile Include="Models\Zatca\HelperContracts\InvoiceResultModel.cs" />
     <Compile Include="Models\Zatca\HelperContracts\ValidationResults.cs" />
     <Compile Include="Models\Zatca\HelperContracts\WarningModel.cs" />
-    <Compile Include="ZatcaTools\InvoiceService.cs" />
+    <Compile Include="ZatcaTools\ZatcaInvoice.cs" />
     <Compile Include="ZatcaTools\ZatcaWrapper.cs" />
   </ItemGroup>
   <ItemGroup>

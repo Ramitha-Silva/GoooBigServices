@@ -27,18 +27,11 @@ namespace TpService.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<EmployeePosAuth> EmployeePosAuths { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<FeChangePassword> FeChangePasswords { get; set; }
         public virtual DbSet<FeRating> FeRatings { get; set; }
-        public virtual DbSet<FeTempCart> FeTempCarts { get; set; }
-        public virtual DbSet<FeUser> FeUsers { get; set; }
-        public virtual DbSet<FeUsersOrder> FeUsersOrders { get; set; }
         public virtual DbSet<FeUsersRating> FeUsersRatings { get; set; }
-        public virtual DbSet<FeUsersStatictic> FeUsersStatictics { get; set; }
         public virtual DbSet<FeUsersSubscription> FeUsersSubscriptions { get; set; }
-        public virtual DbSet<MyPortalCurrency> MyPortalCurrencies { get; set; }
-        public virtual DbSet<MyPortalDesign> MyPortalDesigns { get; set; }
         public virtual DbSet<MyPortalElement> MyPortalElements { get; set; }
         public virtual DbSet<MyPortalElementsImage> MyPortalElementsImages { get; set; }
         public virtual DbSet<MyPortalEmail> MyPortalEmails { get; set; }
@@ -47,24 +40,14 @@ namespace TpService.Models
         public virtual DbSet<MyPortalSectionCategory> MyPortalSectionCategories { get; set; }
         public virtual DbSet<MyPortalSectionProduct> MyPortalSectionProducts { get; set; }
         public virtual DbSet<MyPortalSection> MyPortalSections { get; set; }
-        public virtual DbSet<MyPortalService> MyPortalServices { get; set; }
-        public virtual DbSet<MyPortalTemplate> MyPortalTemplates { get; set; }
         public virtual DbSet<MyPortalWebsite> MyPortalWebsites { get; set; }
-        public virtual DbSet<ScAttribute> ScAttributes { get; set; }
         public virtual DbSet<ScBanksAccount> ScBanksAccounts { get; set; }
-        public virtual DbSet<ScCategory> ScCategories { get; set; }
-        public virtual DbSet<ScCommission> ScCommissions { get; set; }
-        public virtual DbSet<ScCommissionsEmployee> ScCommissionsEmployees { get; set; }
         public virtual DbSet<ScInventoriesIn> ScInventoriesIns { get; set; }
         public virtual DbSet<ScInventoriesOut> ScInventoriesOuts { get; set; }
         public virtual DbSet<ScInventoryEmployee> ScInventoryEmployees { get; set; }
         public virtual DbSet<ScInventoryProcess> ScInventoryProcesses { get; set; }
-        public virtual DbSet<ScMarkterGroup> ScMarkterGroups { get; set; }
-        public virtual DbSet<ScMarkterGroupSub> ScMarkterGroupSubs { get; set; }
         public virtual DbSet<ScMarkterPromo> ScMarkterPromos { get; set; }
         public virtual DbSet<ScPackageHistory> ScPackageHistories { get; set; }
-        public virtual DbSet<ScPackagesAttribute> ScPackagesAttributes { get; set; }
-        public virtual DbSet<ScPackagesImage> ScPackagesImages { get; set; }
         public virtual DbSet<ScPaymentSetting> ScPaymentSettings { get; set; }
         public virtual DbSet<ScProductCost> ScProductCosts { get; set; }
         public virtual DbSet<ScProductPrice> ScProductPrices { get; set; }
@@ -117,21 +100,9 @@ namespace TpService.Models
         public virtual DbSet<PsPost> PsPosts { get; set; }
         public virtual DbSet<PsSeenPost> PsSeenPosts { get; set; }
         public virtual DbSet<ClsVidLibrary> ClsVidLibraries { get; set; }
-        public virtual DbSet<MgClassification> MgClassifications { get; set; }
-        public virtual DbSet<MgBfRqOrder> MgBfRqOrders { get; set; }
-        public virtual DbSet<MgBuffetOrder> MgBuffetOrders { get; set; }
         public virtual DbSet<ClsDirectionDepartment> ClsDirectionDepartments { get; set; }
-        public virtual DbSet<ClsDirection> ClsDirections { get; set; }
         public virtual DbSet<ClsDepartmentsStructure> ClsDepartmentsStructures { get; set; }
-        public virtual DbSet<SessionLogApi> SessionLogApis { get; set; }
-        public virtual DbSet<SysErrorMessage> SysErrorMessages { get; set; }
-        public virtual DbSet<ScSubSalesInvoiceTransaction> ScSubSalesInvoiceTransactions { get; set; }
-        public virtual DbSet<ScSalesOrderProcess> ScSalesOrderProcesses { get; set; }
-        public virtual DbSet<ScShippingPackage> ScShippingPackages { get; set; }
-        public virtual DbSet<ScGiftPoint> ScGiftPoints { get; set; }
-        public virtual DbSet<ScOnlinePOS> ScOnlinePOS { get; set; }
         public virtual DbSet<ClsCity> ClsCities { get; set; }
-        public virtual DbSet<ClsCountry> ClsCountries { get; set; }
         public virtual DbSet<ScPackagesDetail> ScPackagesDetails { get; set; }
         public virtual DbSet<ScWorkShift> ScWorkShifts { get; set; }
         public virtual DbSet<SMSMessage> SMSMessages { get; set; }
@@ -214,6 +185,9 @@ namespace TpService.Models
         public virtual DbSet<MyPortalWebsiteIdentification> MyPortalWebsiteIdentifications { get; set; }
         public virtual DbSet<ScClientIdentification> ScClientIdentifications { get; set; }
         public virtual DbSet<CgMngDevicesZatca> CgMngDevicesZatcas { get; set; }
+        public virtual DbSet<ScSalesInvoicesZatca> ScSalesInvoicesZatcas { get; set; }
+        public virtual DbSet<ScSalesInvoicesZatcaPIH> ScSalesInvoicesZatcaPIHs { get; set; }
+        public virtual DbSet<ScSalesInvoicesZatcaPIHError> ScSalesInvoicesZatcaPIHErrors { get; set; }
     
         public virtual int GetInvoicesByClient(Nullable<int> websiteID, Nullable<int> supplierNumber)
         {

@@ -32,5 +32,8 @@ namespace TpService.Models
         public Nullable<int> UpdatedBy { get; set; }
         public Nullable<long> WebsiteID { get; set; }
         public string TokenType { get; set; }
+        public string binarySecurityTokenCer { get; set; }
+        public string LatestInvoiceHash { get; set; }
+        public string LatestInvoiceICV { get; set; }
     }
 }
